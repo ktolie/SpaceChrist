@@ -16,7 +16,9 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wp_gromf');
+define( 'WPCACHEHOME', '/home3/kyle/public_html/spacechrist-staging/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
+define('WP_CACHE', true); //Added by WP-Cache Manager
+define('DB_NAME', 'wp_spacechrist');
 
 /** MySQL database username */
 define('DB_USER', 'ktolie');
@@ -42,17 +44,20 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'jg>b]@<2W2P(X-cmzU|&@CkYWg3oNW|o|GdJCCPn_v(Eq01:ZK3WfWUoQf)2e_^]');
-define('SECURE_AUTH_KEY',  'a/7p6ZuvtZd (1W3FDBG *9_)b_ick)+FHJGZ-{sL9/6P5D2s+3=J6a-MfiDd~9#');
-define('LOGGED_IN_KEY',    '.8tQX<tZ[B>iQS.]-BgTA+X1-E0|$u]e<| NmcizH2Vf9I:RFwBt)pMic+H`#6bs');
-define('NONCE_KEY',        'd.$?[5g9;9H|O%Z.Vab-DAl/Ut.lU/1^isP*4/zt!&]Q*%KeR+an&ASLvSC^I~pE');
-define('AUTH_SALT',        '~/ex9|{WjV[=T#?m|8O=B9Y4wilx-G|oXL)eO0[wv }u~bIthpU*f^=4L~g,-S6g');
-define('SECURE_AUTH_SALT', '3eVS7nXF/dJr:f D(2s<47n^;I+%c]?|?_tXu}{+nMB)P?ds!1n#U^[=4<|3;iud');
-define('LOGGED_IN_SALT',   'R4uI}^|wWN5]i&?LXw[;)%&<5@HECpq0^`uxXgJ-4%(}<-S|W-`76qe!n&W.]%+4');
-define('NONCE_SALT',       'rdtV6$RI*A11>uu>}j4 @QUTjt|*{>1J{zr#rSuws0|R[y$7u2orXaYetW1*s#1}');
+define('AUTH_KEY',         'LH!9jKs<>V<|Go^j7aVt>\`>O56NH)DU2R?zjuz|?Q^-mLIy<)gEAdS<t3Nra<isHm?6y');
+define('SECURE_AUTH_KEY',  '7S#4?P9c^~iYzC8QedjYGmR125ozftN@1@R@RGXf=;#6-=6VhLz\`f!;J*7^Y');
+define('LOGGED_IN_KEY',    'zZ#M|dIm\`IQ0n94^2WI-Ch-8y(ZGXN53BL5p2zHJL(LNdyh4NBFRtb)ozWPeZ@52Q:');
+define('NONCE_KEY',        'h/kUf(ea*Ohxr9AykObbuz^KbY$_el)a;EyGq9erDxqW(bBcq#qcX<8Fm-GM$G;dS0~x=yqd7');
+define('AUTH_SALT',        '<ct/<juJ>T|E^2TsGr7os__$7zzCdzh40wu7DJt$pd1ADzY*PD5*/oyk_^~KB=k~qCPw$j<S*oD<0zC\`X3AUNN=');
+define('SECURE_AUTH_SALT', '>VXb6O>Bx(LQ\`:7vH8<$\`d-1LlAvh4@3q0eZ*r@V-!dyxSVn*66hv$X;ll@?q7V*-E1eLDG_cD_');
+define('LOGGED_IN_SALT',   'R:!hodz)cK^QSM8sHsY^wNbtM::Eo0|f@<Wz2#J:Ih#asnua8prjYKtjx)k<|@c5@Z08Z0If_(cm');
+define('NONCE_SALT',       'fYw3(T2i*<lp^fIO=/$\`u08t8GL5h42^0\`MuI$qvwWwxm@RuX~;cxc2LW(vFO2byV');
 
 /**#@-*/
-
+define('AUTOSAVE_INTERVAL', 600 );
+define('WP_POST_REVISIONS', 1);
+define( 'WP_CRON_LOCK_TIMEOUT', 120 );
+define( 'WP_AUTO_UPDATE_CORE', true );
 /**
  * WordPress Database Table prefix.
  *
@@ -78,3 +83,5 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+add_filter( 'auto_update_plugin', '__return_true' );
+add_filter( 'auto_update_theme', '__return_true' );
