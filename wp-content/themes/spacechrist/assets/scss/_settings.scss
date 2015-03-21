@@ -40,13 +40,6 @@ $total-columns: 12;
 
 // Global
 
-
-// We use these to control various global styles
-$body-bg: #fff;
-$body-font-color: #222;
-$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$body-font-style: normal;
-
 // We use this to control font-smoothing
 $font-smoothing: antialiased;
 
@@ -117,6 +110,16 @@ $large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-w
 //
 // TYPOGRAPHY
 //
+
+// Import Custom Font
+
+@import "../custom_fonts/css/font.css";
+
+// We use these to control various global styles
+$body-bg: #fff;
+$body-font-color: #222;
+$body-font-family: "edit-undo-line", Arial, sans-serif;
+$body-font-style: normal;
 
 // $include-html-type-classes: $include-html-classes;
 

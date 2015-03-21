@@ -191,7 +191,9 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
-  background-color: #ffffff;
+  background-image: url('../img/sc_background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 input,
 button,
