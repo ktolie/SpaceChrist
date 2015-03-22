@@ -113,13 +113,13 @@ $large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-w
 
 // Import Custom Font
 
-@import "../custom_fonts/css/font.css";
 
 // We use these to control various global styles
-$body-bg: #fff;
-$body-font-color: #222;
-$body-font-family: "edit-undo-line", Arial, sans-serif;
+$body-bg: url('../img/sc_background.gif') #000;
+$body-font-color: #fff;
+$body-font-family: "VT323", Arial, Sans;
 $body-font-style: normal;
+
 
 // $include-html-type-classes: $include-html-classes;
 

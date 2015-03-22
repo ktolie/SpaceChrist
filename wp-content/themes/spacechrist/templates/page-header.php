@@ -1,2 +1,2 @@
-<h1 class="about-title"><?php echo roots_title(); ?></h1>
+<h1 class="about-title"></h1>
 
