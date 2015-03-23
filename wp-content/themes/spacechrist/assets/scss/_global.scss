@@ -8,6 +8,38 @@ h1 {
 	color: yellow;
 }
 
+body {
+    position: relative;
+    cursor: pointer;
+    -webkit-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    -moz-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(149,29,179, 1);
+    -moz-transition: all .9s linear;
+    -webkit-transition: all .9s linear;
+    -ms-transition: all .9s linear;
+    -o-transition: all .9s linear;
+    transition: all .9s linear;
+  }
+
+    &:hover:before {
+    background: none;
+  }
+ }
+  
+
+
+
+
 .main {
 	z-index: 2;
 }
@@ -70,4 +102,18 @@ h1 {
 .menu-contact {
 	background: #000;
 	width: 250px;
+}
+
+#groovy {
+	display: none;
+	color: #000;
+	font: bold 120px 'VT323', sans-serif;
+	text-align: center;
+	margin-top: -1000px;
+	margin-left: -1080px;
+	font-size:72px;
+	position: relative;
+	top:0;
+	z-index: -1;
+
 }
