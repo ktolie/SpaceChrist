@@ -1,7 +1,7 @@
-<?php get_template_part('templates/head'); ?>
+  <?php get_template_part('templates/head'); ?>
 
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> id="top-image">
 
 
 
@@ -27,7 +27,11 @@
       <?php include roots_template_path(); ?>
     </main><!-- /.main -->
     <?php if (roots_display_sidebar()) : ?>
-      <aside class="sidebar <?php echo roots_sidebar_class(); ?> columns" role="complementary">
+
+        <aside class="sidebar <?php echo roots_sidebar_class(); ?> columns" role="complementary">
+
+
+
         <?php include roots_sidebar_path(); ?>
       </aside><!-- /.sidebar -->
     <?php endif; ?>
@@ -41,5 +45,5 @@
 
 
 </body>
-
+<script type="text/javascript" src="http://localhost:8888/wp-content/themes/spacechrist/assets/js/plugins/background.js"></script>
 </html>

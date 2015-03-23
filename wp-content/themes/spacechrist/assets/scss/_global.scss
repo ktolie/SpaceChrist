@@ -23,7 +23,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(149,29,179, 1);
+    background: rgba(0,0,0, 1);
     -moz-transition: all .9s linear;
     -webkit-transition: all .9s linear;
     -ms-transition: all .9s linear;
@@ -36,7 +36,16 @@ body {
   }
  }
   
-
+#top-image {
+background: url('../img/sc_background.gif') 100% #000;
+background-repeat: no-repeat;
+position:fixed ;
+top:0;
+width: 100%;
+z-index:0;
+  height:100%;
+  background-size: calc(100% + 50px);
+}
 
 
 
@@ -62,7 +71,7 @@ body {
 .sidebar {
 	background-image: url('../img/menu-bg.png');
 	background-repeat: repeat-y;
-	height: 902px;
+	height: 5000px;
 	display: inline-block;
 	z-index: 1;
 	margin-right: -20%;
@@ -115,5 +124,9 @@ body {
 	position: relative;
 	top:0;
 	z-index: -1;
+}
 
+marquee {
+	position: absolute;
+	top: 0px
 }

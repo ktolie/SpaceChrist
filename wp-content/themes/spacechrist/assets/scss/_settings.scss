@@ -115,7 +115,7 @@ $large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-w
 
 
 // We use these to control various global styles
-$body-bg: url('../img/sc_background.gif') #000;
+$body-bg: #000;
 $body-font-color: #fff;
 $body-font-family: "VT323", Arial, Sans;
 $body-font-style: normal;

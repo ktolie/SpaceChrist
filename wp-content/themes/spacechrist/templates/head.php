@@ -8,9 +8,15 @@
 
   <?php wp_head(); ?>
 
+ <script type="text/javascript" src="http://localhost:8888/wp-content/themes/spacechrist/assets/js/plugins/groovy.js"></script>
+	
+ <script type="text/javascript" src="http://localhost:8888/wp-content/themes/spacechrist/assets/js/plugins/konami.js"></script>
+
  <link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
 
  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo esc_url(get_feed_link()); ?>">
+ <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo esc_url(get_feed_link()); ?>">
+
+
 </head>
