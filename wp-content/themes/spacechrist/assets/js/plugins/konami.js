@@ -106,7 +106,4 @@ var Konami = function (callback) {
 
 
 
-var easter_egg = new Konami(function() { 
-	document.getElementById("groovy").style.display = "block";
-}
-);
+var easter_egg = new Konami('http://localhost:8888/wp-content/themes/spacechrist/templates/html5-synth-master/index.html');
