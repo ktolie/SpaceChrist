@@ -106,4 +106,4 @@ var Konami = function (callback) {
 
 
 
-var easter_egg = new Konami('http://localhost:8888/wp-content/themes/spacechrist/templates/html5-synth-master/index.html');
+var easter_egg = new Konami('http://staging.spacechrist.kyletolie.com/wp-content/themes/spacechrist/templates/html5-synth-master/index.html');

@@ -46,5 +46,5 @@
 
 </body>
 
-<script type="text/javascript" src="http://localhost:8888/wp-content/themes/spacechrist/assets/js/plugins/background.js"></script>
+<script type="text/javascript" src="http://staging.spacechrist.kyletolie.com/wp-content/themes/spacechrist/assets/js/plugins/background.js"></script>
 </html>
